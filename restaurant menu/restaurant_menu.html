@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Opulent Table</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            color: black;
+          }
+          header, footer {
+            text-align: center;
+            background: lightgray;
+            padding: 10px;
+            margin-bottom: 10px;
+          }
+          img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+          }
+          nav ul {
+            list-style: none;
+            padding: 0;
+          }
+          nav ul li {
+            display: inline;
+            margin-right: 10px;
+          }
+          nav ul li a {
+            color: blue;
+            text-decoration: none;
+          }
+          nav ul li a:hover {
+            text-decoration: underline;
+          }
+          main {
+            max-width: 800px;
+            margin: 0 auto 20px;
+          }
+          article img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin-bottom: 5px;
+          }
+          label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+          }
+          input[type="number"], textarea {
+            width: 200px;
+            padding: 5px;
+            margin-top: 5px;
+          }
+          input[type="submit"] {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+          }
+          input[type="submit"]:hover {
+            background: darkblue;
+          }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Opulent Table</h1>
+            <img 
+                src="https://cdn-desktop-ai-media.oai.operacdn.com/public/generated_images/78852f5d-3999-11f1-96d8-bd86d5f9cf97/opulent_italian_restaurant_table_no_waiter_f2a6d4a4.png" 
+                id="header-img" 
+                alt="Opulent Table Luxury Dining"
+            />
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order-form">Order Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+                <article>
+                    <h3>Potato Cheese Soup with Smoked Salmon Ulam Tuna Tartare</h3>
+                    <img
+                        src="https://www.rhubarbandlavender.com/wp-content/uploads/2025/08/IMG_2736-min-791x1024.jpg" 
+                        alt="Potato Cheese Soup with Smoked Salmon and Tuna Tartare"
+                    />
+                    <p><i>A rich and creamy potato cheese soup paired with delicate smoked salmon and fresh tuna tartare, offering a luxurious start to your meal.<br>Price: ₦13,950</i></p>
+                </article>
+
+                <article>
+                    <h3>Pan-Seared Scallops with Asparagus and Yakiniku Sauce</h3>
+                    <img 
+                        src="https://kitchenconfidante.com/wp-content/uploads/2019/09/Pan-Seared-Scallops-kitchenconfidante.com-1914-750x1124.jpg" 
+                        alt="Pan-Seared Scallops with Asparagus and Yakiniku Sauce"
+                    />
+                    <p><i>Perfectly seared scallops served alongside tender asparagus, drizzled with a savory and slightly sweet yakiniku sauce for a refined seafood experience.<br>Price: ₦24,800</i></p>
+                </article>
+
+                <article>
+                    <h3>Lavish Beef Wellington with Truffle Jus</h3>
+                    <img 
+                        src="https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage192072050-50-Heddon-street-kitchen-fathers-day.jpg" 
+                        alt="Lavish Beef Wellington with Truffle Jus"
+                    />
+                    <p><i>A classic beef Wellington featuring tender filet mignon wrapped in puff pastry, complemented by an aromatic truffle jus for an indulgent main course.<br>Price: ₦34,875</i></p>
+                </article>
+            </section>
+
+            <section id="order-form">
+                <h2>Place Your Order</h2>
+                <article>
+                    <form action="">
+                    <div>
+                        <label for="potato-cheese-soup">Potato Cheese Soup with Smoked Salmon Ulam Tuna Tartare (Qty):</label>
+                        <input type="number" id="potato-cheese-soup" name="potato_cheese_soup" min="0" value="0" />
+                    </div>
+
+                    <div>
+                        <label for="pan-seared-scallops">Pan-Seared Scallops with Asparagus and Yakiniku Sauce (Qty):</label>
+                        <input type="number" id="pan-seared-scallops" name="pan_seared_scallops" min="0" value="0" />
+                    </div>
+
+                    <div>
+                        <label for="beef-wellington">Lavish Beef Wellington with Truffle Jus (Qty):</label>
+                        <input type="number" id="beef-wellington" name="beef_wellington" min="0" value="0" />
+                    </div>
+
+                    <hr />
+
+                    <h3>Sides and Add-ons</h3>
+
+                        <div>
+                            <input type="checkbox" id="side-salad" name="sides" value="side_salad" />
+                            <label for="side-salad">Side Salad</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="extra-sauce" name="sides" value="extra_sauce" />
+                            <label for="extra-sauce">Extra Sauce</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="bread-rolls" name="sides" value="bread_rolls" />
+                            <label for="bread-rolls">Bread Rolls</label>
+                        </div>
+
+                    <hr />
+
+                    <div>
+                        <label for="special-requests">Special Requests (for any item):</label><br />
+                        <textarea id="special-requests" name="special_requests" rows="4" cols="50" placeholder="Write your special requests here..."></textarea>
+                        </div>
+
+                    <br />
+
+                    <div>
+                        <input type="submit" value="Go To Checkout" />
+                    </div>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Made with love by <a href="https://www.codedex.io/@oyehimar">OyeHimar</a></p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
